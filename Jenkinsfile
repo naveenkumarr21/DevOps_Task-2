@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "sivagurunathan7/test_repository"
+        IMAGE_NAME = "naveenkumar2184/devops_task2"
         TAG = "latest"
         CONTAINER_NAME = "my-container"
         PORT = "3001"
@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "Cloning GitHub repository..."
-                git 'https://github.com/Sivagurunathan98/New_docker_push.git'
+                git 'https://github.com/naveenkumarr21/DevOps_Task-2.git'
             }
         }
 
